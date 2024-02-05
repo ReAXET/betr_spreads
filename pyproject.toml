@@ -1,0 +1,32 @@
+[project]
+name = "backend"
+version = "0.1.0"
+description = "Default template for PDM package"
+authors = [
+    {name = "ReAXET", email = "joshua.sturm@outlook.com"},
+]
+dependencies = [
+    "supabase>=2.3.4",
+    "fastapi>=0.109.2",
+    "sqlmodel>=0.0.14",
+    "pydantic-settings>=2.1.0",
+    "loguru>=0.7.2",
+    "python-jose>=3.3.0",
+    "redis[hiredis]>=5.0.1",
+    "nba-api>=1.4.1",
+    "rich>=13.7.0",
+    "pandera[fastapi]>=0.18.0",
+    "pandas>=2.2.0",
+    "isort>=5.13.2",
+]
+requires-python = ">=3.11"
+readme = "README.md"
+license = {text = "MIT"}
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+
+[tool.pdm]
+distribution = true
